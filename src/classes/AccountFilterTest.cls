@@ -5,8 +5,10 @@ public class AccountFilterTest {
     @isTest
     static void filterAccountsByDocumentNumberTest () {
 
+        Map<String, SObject> records = AccountFixtureFactory.createIntegratedScenario();
+
         List<Account> accounts = new List<Account> { 
-            AccountFixtureFactory.createAccount( 'Teste 01', '42364324000159' ) 
+            (Account) records.get('account') 
         };
 
         AccountFilter filter = new AccountFilter();
