@@ -29,3 +29,5 @@ Segue abaixo alguns padrões de projeto comentados e alguns aplicados durante o 
 
 
 
+# Exercícios
+1. [US001 - Agendamento de apresentação para clientes Premium](https://github.com/topinformation-public/topi-run-2020/blob/master/exercise-us-001-premium-customer-meeting.md)

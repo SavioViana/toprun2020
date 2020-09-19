@@ -4,8 +4,7 @@
 
 **Posso** de forma automática manter a minha agenda atualizada
 
-**Para** apresentação coorporativa ao novos Clientes Premium com isso melhorar o relacionamento com o mesmo.
-
+**Para** apresentação coorporativa aos novos Clientes Premium com isso melhorar o relacionamento com o mesmo.
 
 
 ## Critérios de Aceite
