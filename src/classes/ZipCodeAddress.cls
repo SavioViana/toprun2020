@@ -6,4 +6,10 @@ public class ZipCodeAddress {
     public String streetNumber;
     public String zipCode;
 
+    override
+    public String toString () {
+        return JSON.serialize(this);
+    }
+
+
 }

@@ -16,6 +16,7 @@ Segue abaixo todas as literaturas citadas durante o curso
 * Domain Driven Design - DDD
 * Working Effectively with a legacy Code
 * Growing Object-Oriented Software, Guided by Tests
+* [Enterprise Integration Patterns] (https://www.enterpriseintegrationpatterns.com/)
 
 # Padrões Apresentados
 
