@@ -10,6 +10,7 @@ export default class NewCase extends LightningElement {
     handleSuccess (event) {
 
         const toast = new ShowToastEvent({
+            variant: 'success',
             title: 'Case Success Created',
             message: 'Caso criado com sucesso!!!! ;)'
         });
