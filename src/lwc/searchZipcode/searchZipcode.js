@@ -1,5 +1,5 @@
 import { api, LightningElement } from 'lwc';
-
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import searchAddress from '@salesforce/apex/SearchAddressCtrl.searchAddress';
  
 export default class SearchZipcode extends LightningElement {
@@ -22,7 +22,7 @@ export default class SearchZipcode extends LightningElement {
 
     handleBlur (event) {
 
-        if (!event.target.value 
+       if (!event.target.value 
             || event.target.value == this.zipCode) return;
         
         let _zipCode = Object.assign(event.target.value.replace('-', ''));
@@ -30,7 +30,15 @@ export default class SearchZipcode extends LightningElement {
         searchAddress({ zipCode : _zipCode }).then( response => {
             let address = response;
             this.publishAddressChanged(address);
+
+        }).catch ( response => {
+
+            let component =  this.template.querySelector("[data-name='zipcode']");
+            component.setCustomValidity(response.body.message);
+            component.reportValidity();
+
         });
+
         console.log (' final do blur ');
     }
 
