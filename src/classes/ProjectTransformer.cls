@@ -12,5 +12,20 @@ public class ProjectTransformer {
         );
 
     }
+    
+    public EnterpriseProject toEnterpriseProject ( Project__c project ) {
+
+        EnterpriseProject enterpriseProject = new EnterpriseProject();
+        
+        enterpriseProject.code = project.Name;
+        enterpriseProject.name = project.ProjectName__c;
+        enterpriseProject.status = project.Status__c;
+        enterpriseProject.startDate = project.StartDate__c;
+        enterpriseProject.endDate = project.EndDate__c;
+        enterpriseProject.budget = project.Budget__c;
+
+        return enterpriseProject;
+
+    }
 
 }
